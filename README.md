@@ -39,7 +39,7 @@ code/utils.py, code/train_main.py, code/train_stage.py, code/evaluate.py
 ```
 
 ## **Running:**
-### **For training and predict:**
+### **For training and predicting:**
 ```
 Training.ipynb, Prediction.ipynb
 ```
