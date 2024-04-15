@@ -1,0 +1,57 @@
+##################################################
+################  Description #######################
+##################################################
+Tips:
+0. Before running this demo, please ensure that all dependent packages are installed.
+0.1. Avoid altering the relative paths of files within the project while using this demo.
+0.2. Run this demo in an environment with a GPU device for optimal performance.
+0.3. Dividing the chromosome is optional; consider it for very robust devices or specialized projects with low-dimensional inputs.
+0.4. If running the program for the first time, execute demo.ipynb before predict.ipynb to ensure all necessary files are complete.
+
+Deformer is designed for training models and predicting cell type composition and chromatin accessibility from bulk ATAC datasets.
+1.1. Deformer comprises two primary functional modules: training and prediction.
+1.2. The training module is implemented in the demo.ipynb file, while the prediction module resides in predict.ipynb.
+
+2. Pay close attention to the comments in the code to understand the significance of each variable.
+
+3. The demo is derived from the GSM3034623 dataset, which includes four cell types, with 6895 peaks extracted during its creation.
+
+If errors or unexpected situations occur, consider checking the following aspects:
+
+4.1 Feature: The plot for the 'scale' is completely blank.
+Issue: The peak count for a particular chromosome is less than 100 rows or not greater than 150 rows.
+Solution: Skip this chromosome or increase the 'variance_threshold' parameter under the 'correct_patch()' function (up to a maximum of 1).
+
+4.2 Feature: The values of the 'groundtruth' are different each time.
+Issue: No seed is set.
+Solution: Open the 'generate_pseudo_sample.py' file and check if 'random_state' has a default value. Alternatively, insert 'random_state= any natural number' between the 'Dominant' and 'sample_num' variables under the 'generate_pseudo_sample()' function to pass a value.
+
+4.3 Feature: Incomplete execution, missing module error.
+Issue: Module is missing.
+Solution: Install the corresponding packages.
+
+4.4 Feature: Incomplete execution, error stating "Found no NVIDIA driver on your system."
+Issue: No GPU is available in the current environment.
+Solution: Switch to an environment with a GPU.
+
+4.5 Feature: Incomplete execution, error indicating missing files.
+Issue: Incorrect or missing file naming.
+Solution: Check if the modified filenames in the code are consistent and ensure the required source files are complete.
+
+4.6 Feature: Incomplete execution, 'out of CUDA memory' error.
+Issue: Insufficient GPU memory.
+Solution: Reduce the 'batch_size' value or perform differential analysis on peaks to reduce their count. If possible, use a device with better performance.
+
+4.7 Feature: Completion of execution, but unsatisfactory training results.
+Issue: Complex problem.
+Solution: Reduce the 'batch_size' value, adjust the 'epoch' value appropriately, increase the 'sample_num' value under the 'generate_pseudo_sample()' function, and clean the data to improve data quality.
+
+4.8 Feature: Incomplete Execution, Error Message Indicates Inconsistency in Patch Numbers between Model and Bulk Data.
+Issue: Discrepancy Arises Due to Various Reasons.
+Solution: Re-call Peaks in Bulk Data to Align with Single-Cell Reference Data or Perform Intersect Alignment of Peaks.
+
+
+
+
+
+
