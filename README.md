@@ -1,6 +1,6 @@
 # Deformer
 Harnessing Deep Learning for cellular deconvolution of chromatin accessibility data
-![Image text](https://github.com/xmuhuanglab/Deformer//Deformer.png)
+![Image text](https://github.com/xmuhuanglab/Deformer/Description/Deformer.png)
 
 ## Introduction of Deformer:
 Within the confines of this study, we introduce Deformer, a deep learning-driven deconvolution technique designed specifically for Bulk ATAC datasets. Deformer utilizes vision transformers (ViT) coupled with a decoder, harnessing the power of multi-head attention mechanisms to delineate and analyze chromosomal characteristics. This approach enables the capture of long-range dependencies within non-coding regions. Through Deformer, accurate predictions of cell type proportions and cell type-specific chromatin accessibility can be achieved across a wide sample types.
