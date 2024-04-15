@@ -16,50 +16,32 @@ other requirements see requirements.txt
 #### I. Install
 ```
 git clone https://github.com/xmuhuanglab/Deformer.git
-```
-#### II. Configure GPU environment
-```
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
-```
-#### III. Set up Deformer environment
-```
 conda env create -f environment.yml
 conda activate Deformer
 ```
 
-## Structure of Deformer:
+## **Structure of Deformer:**
 #### I. Preparation of demo datasets:
+![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/Devide_chromosome.png)
 ```
-devide_chromosome.py
+code/devide_chromosome.py
 ```
 #### II. Generation of pseudo bulk:
+![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/pseudo-bulk.png)
 ```
-generate_pseudo_sample.py
-correct_patch.py
+code/generate_pseudo_sample.py, code/correct_patch.py
 ```
-#### III. Model components:
+#### III. Model structure:
+![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/biological_insight.png)
 ```
-utils.py 
-train_main.py
-train_stage.py; evaluate.py
-```
-#### IV. Model training:
-```
-main.py
-```
-#### V. Model prediction:
-```
-predict.py
+code/utils.py, code/train_main.py, code/train_stage.py, code/evaluate.py
 ```
 
 ## **Running:**
-### **For training:**
+### **For training and predict:**
 ```
-Training.ipynb
-```
-### **For prediction:** 
-```
-Prediction.ipynb
+Training.ipynb, Prediction.ipynb
 ```
 
 ## **Contact:**
