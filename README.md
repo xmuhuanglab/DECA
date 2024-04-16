@@ -17,7 +17,7 @@ other requirements see requirements.txt
 ```
 git clone https://github.com/xmuhuanglab/Deformer.git
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
-conda env create -f environment.yml
+conda env create -f environment.yaml
 conda activate Deformer
 ```
 
