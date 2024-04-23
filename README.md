@@ -22,7 +22,7 @@ conda activate Deformer
 ```
 
 ## **Structure of Deformer:**
-#### I. Preparation of demo datasets:
+#### I. Preparation of input:
 ![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/Devide_chromosome.png)
 ```
 code/devide_chromosome.py
