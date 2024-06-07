@@ -1,5 +1,5 @@
 # **Deformer**
-Harnessing Deep Learning for cellular deconvolution of chromatin accessibility data
+Harnessing interpretable transformer model for cellular deconvolution of chromatin accessibility profile
 ## **Workflow:**
 ![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/Deformer_v2.png)
 ## **Introduction of Deformer:**
