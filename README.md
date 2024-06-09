@@ -13,7 +13,7 @@ einops version: 0.6.1; NumPy version: 1.23.5; Pandas version: 1.5.3
 tqdm version: 4.66.1; Scanpy version: 1.9.5, 
 other requirements see requirements.txt
 ```
-#### I. Install
+#### Install
 ```
 git clone https://github.com/xmuhuanglab/Deformer.git
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
