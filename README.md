@@ -1,11 +1,11 @@
-# **Deformer**
+# **DECA**
 Harnessing interpretable transformer model for cellular deconvolution of chromatin accessibility profile
 ## **Workflow:**
 ![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/Deformer_v2.png)
-## **Introduction of Deformer:**
-Within the confines of this study, we introduce Deformer, a deep learning-driven deconvolution technique designed specifically for Bulk ATAC datasets. Deformer utilizes vision transformers (ViT) coupled with a decoder, harnessing the power of multi-head attention mechanisms to delineate and analyze chromosomal characteristics. This approach enables the capture of long-range dependencies within non-coding regions. Through Deformer, accurate predictions of cell type proportions and cell type-specific chromatin accessibility can be achieved across a wide sample types.
+## **Introduction of DECA:**
+Within the confines of this study, we introduce Deformer, a deep learning-driven deconvolution technique designed specifically for Bulk ATAC datasets. DECA utilizes vision transformers (ViT) coupled with a decoder, harnessing the power of multi-head attention mechanisms to delineate and analyze chromosomal characteristics. This approach enables the capture of long-range dependencies within non-coding regions. Through DECA, accurate predictions of cell type proportions and cell type-specific chromatin accessibility can be achieved across a wide sample types.
 
-## **Installation of Deformer:**
+## **Installation of DECA:**
 #### Dependencies
 ```
 Python version: 3.9.17; PyTorch version: 2.0.1+cu117; scikit-learn version: 1.3.0;
@@ -15,25 +15,25 @@ other requirements see requirements.txt
 ```
 #### Install
 ```
-git clone https://github.com/xmuhuanglab/Deformer.git
+git clone https://github.com/xmuhuanglab/DECA.git
 conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
 conda env create -f environment.yaml
-conda activate Deformer
+conda activate DECA
 ```
 
-## **Structure of Deformer:**
+## **Structure of DECA:**
 #### I. Preparation of input:
-![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/Devide_chromosome.png)
+![Image text](https://github.com/xmuhuanglab/DECA/blob/main/Description/Devide_chromosome.png)
 ```
 code/devide_chromosome.py
 ```
 #### II. Generation of pseudo bulk:
-![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/pseudo-bulk.png)
+![Image text](https://github.com/xmuhuanglab/DECA/blob/main/Description/pseudo-bulk.png)
 ```
 code/generate_pseudo_sample.py, code/correct_patch.py
 ```
 #### III. Model structure:
-![Image text](https://github.com/xmuhuanglab/Deformer/blob/main/Description/biological_insight.png)
+![Image text](https://github.com/xmuhuanglab/DECA/blob/main/Description/biological_insight.png)
 ```
 code/utils.py, code/train_main.py, code/train_stage.py, code/evaluate.py
 ```
